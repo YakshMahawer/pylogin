@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+    <div>
+        <section class="imp">
+        <section>
+            <div class="login show" id="one">
+            <div class="textbox slide-left2">
+                <div class="head">
+                <h1>Log In To XYZ</h1>
+                <div class="message" id="login-message"></div>
+                <ul>
+                    <li>
+                    <i class="fab fa-facebook-f">
+                    </li>
+                    <li>
+                    <i
+                        class="fab fa-google-plus-g">
+                    </li>
+                    <li>
+                    <i class="fab fa-linkedin-in">
+                    </li>
+                </ul>
+                <h3>or use your E-mail ID</h3>
+                </div>
+                <form action="" class="form" onsubmit="event.preventDefault();">
+                <input type="text" placeholder="EMAIL" id="login-username" required="" />
+                <input type="password" placeholder="PASSWORD" id="login-password" required="" />
+                <button id="b">
+                    <a href="#">
+                    Forgot password?
+                    </a>
+                </button>
+                <button type="submit" onclick="login()" class="sign_in_btn">
+                    SIGN IN
+                </button>
+                </form>
+            </div>
+            </div>
+            <div class="sec show" id="two">
+            <div class="textbox slide-left">
+                <h1>Not a member?</h1>
+                <p>Sign up and start shopping.</p>
+                <button
+                id="b1"
+                class="prompt_sign_up"
+                onclick="handleSlide()"
+                >
+                SIGN UP
+                </button>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="sec hide" id="three">
+            <div class="textbox slide-left">
+                <h1>Already a member?</h1>
+                <p>Login to keep shopping.</p>
+                <button
+                id="b2"
+                class="prompt_sign_in"
+                onclick="handleSwipe()"
+                >
+                SIGN IN
+                </button>
+            </div>
+            </div>
+            <div class="login hide" id="four">
+            <div class="textbox slide-right">
+                <div class="head">
+                <h1>Create Account</h1>
+                <div class="message" id="signup-message"></div>
+                <ul>
+                    <li>
+                    <i class="fab fa-facebook-f">
+                    </li>
+                    <li>
+                    <i
+                        class="fab fa-google-plus-g">
+                    </li>
+                    <li>
+                    <i class="fab fa-linkedin-in">
+                    </li>
+                </ul>
+                <h3>or use your E-mail ID</h3>
+                </div>
+                <form action="" class="form">
+                <input type="text" placeholder="USER" id="signup-username" required="" />
+                <br />
+                <input type="text" placeholder="PASS" id="signup-password" required="" />
+                <br />
+                <input type="text" placeholder="PHONE NO. (optional)" />
+                <br />
+                <button
+                    type="submit"
+                    class="sign_up_btn"
+                    onclick="signup()"
+                >
+                    SIGN UP
+                </button>
+                </form>
+            </div>
+            </div>
+        </section>
+        </section>
+        </div>
+</body>
+<script src="../static/js/login.js"></script>
+</html>
